@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   
+  email: string = "";
   nomeA: string = "";
   senhaA: string = "";
   erroA: string = "";
@@ -15,9 +16,9 @@ export class LoginComponent {
   constructor(private router: Router){}
   usuarioLogin()
   {
-    if(this.nomeA == "a" && this.senhaA == "123")
+    if(this.nomeA == "" && this.senhaA == "" && this.email == "")
     {
-      this.router.navigate(['/home']);
+      this.router.navigate(['/hamburgaria']);
     }
     else
     {

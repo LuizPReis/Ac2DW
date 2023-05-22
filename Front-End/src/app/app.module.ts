@@ -7,12 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { LoginHamburgariaComponent } from './login-hamburgaria/login-hamburgaria.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    LoginHamburgariaComponent
   ],
   imports: [
     BrowserModule,

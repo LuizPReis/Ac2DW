@@ -1,16 +1,66 @@
 <div class = "row">
-    <div class="col-sm-6">
-      <label for="nomeUsuario" class="form-label">Nome</label>
-      <input [(ngModel)]="nomeA" type="text" class="form-control" id="nomeUsuario">
+
+  <div class="col-12">
+    <style>
+      .email{
+        display: flex;
+        font-size: 20px;
+        margin-top: 15px;
+      }
+    </style>
+
+    <label for="email" class="email">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
+    <div class="invalid-feedback">
+      Please enter a valid email address for shipping updates.
     </div>
+  </div>
+
+  <div class="col-sm-6">
+    <style>
+      .nome{
+        display: flex;
+        font-size: 20px;
+        margin-top: 15px;
+      }
+    </style>
+
+    <label for="firstName" class="nome">Nome</label>
+    <input type="text" class="form-control" id="firstName" placeholder="Digite seu nome" value="" required="">
+    <div class="invalid-feedback">
+      Valid first name is required.
+    </div>
+  </div>
 
     <div class="col-sm-6">
-      <label for="senhaUsuario" class="form-label">Senha</label>
-      <input [(ngModel)]="senhaA" type="password" class="form-control" id="senhaUsuario">
+      <style>
+        .celular{
+          display: flex;
+          font-size: 20px;
+          margin-top: 15px;
+        }
+      </style>
+
+      <label for="senhaUsuario" class="celular">Celular</label>
+      <input [(ngModel)]="senhaA" type="password" class="form-control" id="senhaUsuario" placeholder="Digite seu numero">
+    </div>
+
+    <div class="col-12">
+      <style>
+        .preferencia{
+          display: flex;
+          font-size: 20px;
+          margin-left: 35%;
+          margin-top: 15px;
+        }
+      </style>
+      
+      <label for="preference" class="preferencia">Nos fale sua preferencia de Hamburguer</label>
+      <input type="text" class="form-control" id="preference" placeholder="Digite seu Hamburguer">
     </div>
 
     <hr class="my-4">
-    <button type="button" (click) = "usuarioLogin()" class="w-100 btn btn-primary btn-lg">Entrada</button>
+    <button type="button" (click) = "usuarioLogin()" class="w-100 btn btn-primary btn-lg">Cadastrar</button>
 <p>
   {{erroA}}
 </p>
