@@ -2,9 +2,11 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const hamburguerController = require('./controllers/hamburguerController');
+const userController = require('./controllers/userController');
 
 app.use(express.json());
 app.use('/hamburguer.js', hamburguerController);
+app.use('/user.js', userController);
 
 const db_user = 'viniciusbotelho527';
 const db_pass = 'HTGfAnnxeuxlRITr';
