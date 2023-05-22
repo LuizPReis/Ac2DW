@@ -1,0 +1,18 @@
+<div class = "row">
+    <div class="col-sm-6">
+      <label for="nomeUsuario" class="form-label">Nome</label>
+      <input [(ngModel)]="nomeA" type="text" class="form-control" id="nomeUsuario">
+    </div>
+
+    <div class="col-sm-6">
+      <label for="senhaUsuario" class="form-label">Senha</label>
+      <input [(ngModel)]="senhaA" type="password" class="form-control" id="senhaUsuario">
+    </div>
+
+    <hr class="my-4">
+    <button type="button" (click) = "usuarioLogin()" class="w-100 btn btn-primary btn-lg">Entrada</button>
+<p>
+  {{erroA}}
+</p>
+</div>
+
