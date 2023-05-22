@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const hamburguerController = require('./controllers/hamburguerController');
 
 app.use(express.json());
+app.use('/hamburguer.js', hamburguerController);
 
 const db_user = 'viniciusbotelho527';
 const db_pass = 'HTGfAnnxeuxlRITr';
